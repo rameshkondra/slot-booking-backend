@@ -5,7 +5,9 @@ const seatRoutes = require('./routes/seatRoutes');
 const cors = require('cors');
 
 const app = express();
-dotenv.config();
+dotenv.config({
+    origin:"*",
+});
 
 
 app.use(express.json());
